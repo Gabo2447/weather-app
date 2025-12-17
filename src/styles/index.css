@@ -6,7 +6,13 @@
   --font-onest: "Onest", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   @apply flex flex-col justify-center;
   @apply selection:text-blue-950 selection:bg-blue-200;
   @apply font-onest;
