@@ -14,7 +14,7 @@ const Title = ({ as, props, children, className }: Props) => {
     <Component
       {...props}
       className={cn(
-        "text-3xl sm:text-6xl font-semibold text-center text-wrap",
+        "text-3xl sm:text-6xl font-semibold text-center text-wrap line-clamp-1",
         className
       )}
     >
