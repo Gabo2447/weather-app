@@ -37,7 +37,7 @@ const weatherDisplay = (weather: WeatherResponse) => {
   return (
     <Section className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
       <div className="col-span-1 md:col-span-2 flex flex-col gap-4">
-        <Card className="bg-[url('src/assets/bg-today-small.svg')] rounded-4xl sm:bg-[url('src/assets/bg-today-large.svg')] bg-cover text-center sm:text-left items-center size-full p-8 grid grid-cols-1 lg:grid-cols-[repeat(2,minmax(350px,1fr))] gap-6">
+        <Card className="bg-[url('/assets/bg-today-small.svg')] rounded-4xl sm:bg-[url('/assets/bg-today-large.svg')] bg-cover text-center sm:text-left items-center size-full p-8 grid grid-cols-1 lg:grid-cols-[repeat(2,minmax(350px,1fr))] gap-6">
           <div className="flex flex-col justify-between">
             <div>
               <Title

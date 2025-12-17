@@ -1,11 +1,11 @@
-import drizzleIcon from "@/assets/icon-drizzle.webp";
-import fogIcon from "@/assets/icon-fog.webp";
-import overcastIcon from "@/assets/icon-overcast.webp";
-import partlyCloudyIcon from "@/assets/icon-partly-cloudy.webp";
-import rainIcon from "@/assets/icon-rain.webp";
-import snowIcon from "@/assets/icon-snow.webp";
-import stormIcon from "@/assets/icon-storm.webp";
-import sunnyIcon from "@/assets/icon-sunny.webp";
+import drizzleIcon from "/assets/icon-drizzle.webp";
+import fogIcon from "/assets/icon-fog.webp";
+import overcastIcon from "/assets/icon-overcast.webp";
+import partlyCloudyIcon from "/assets/icon-partly-cloudy.webp";
+import rainIcon from "/assets/icon-rain.webp";
+import snowIcon from "/assets/icon-snow.webp";
+import stormIcon from "/assets/icon-storm.webp";
+import sunnyIcon from "/assets/icon-sunny.webp";
 
 export const getWeatherIcon = (code: number): string => {
   const codeMap: Record<number, string> = {
