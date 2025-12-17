@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { Github } from "lucide-react";
+
 const Header = () => {
   return (
     <header className="flex items-center justify-between border-b border-neutral-800 bg-neutral-900/50 backdrop-blur-lg px-4 sm:px-16 py-3 sm:py-5 sticky top-0">
@@ -6,14 +9,14 @@ const Header = () => {
         Weather App
       </a>
       <nav className="flex items-center gap-x-4 text-neutral-300">
-        <a href="" className="underline-effect">
-          Home
-        </a>
-        <a href="" className="underline-effect">
-          About
-        </a>
-        <a href="" className="underline-effect">
-          Contact
+        <a
+          href="https://github.com/gabo2447/weather-app"
+          target="_blank"
+          type="nooreferer noopener"
+        >
+          <Button variant={"secondary"} className="button-jump">
+            <Github />
+          </Button>
         </a>
       </nav>
     </header>
