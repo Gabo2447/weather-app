@@ -14,6 +14,5 @@ const options = {
 export const getWeather = async (city: string) => {
   const res = await fetch(URL_QUERY(city), options);
   const data = await res.json();
-  console.log(data);
   return data;
 };
