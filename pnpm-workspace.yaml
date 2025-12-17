@@ -1,0 +1,9 @@
+minimumReleaseAge: 720
+
+minimumReleaseAgeExclude:
+  - react
+  - react-dom
+
+onlyBuiltDependencies:
+  - '@swc/core'
+  - esbuild
