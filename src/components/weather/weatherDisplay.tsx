@@ -17,18 +17,17 @@ const weatherDisplay = (weather: WeatherResponse) => {
     <li key={day.date}>
       <Card className="p-4 flex flex-col text-center sm:text-left gap-0">
         <div className="sm:max-w-3/4 mx-auto">
-          <h4 className="text-neutral-300 font-bold text-md sm:text-xl text-center">
+          <h4 className="text-neutral-300 font-bold text-sm sm:text-xl w-fit sm:w-full text-center line-clamp-1">
             {dayCodes[new Date(day.date).getDay()]}
           </h4>
           <img
             src={getWeatherIcon(day.day.condition.code)}
             alt={day.day.condition.text}
-            className="size-20 aspect-square sm:size-2/5 mx-auto"
+            className="size-12 aspect-square sm:size-2/5 mx-auto"
           />
-          <div className="text-sm sm:text-xl text-neutral-200 flex justify-between">
-            <h2>{day.day.maxtemp_c}°</h2>
-            <h2>{day.day.mintemp_c}°</h2>
-          </div>
+          <h2 className="text-sm text-[12px] text-center sm:text-xl text-neutral-200 mx-auto">
+            {day.day.avgtemp_c}°
+          </h2>
         </div>
       </Card>
     </li>

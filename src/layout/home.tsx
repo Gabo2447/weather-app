@@ -9,7 +9,7 @@ interface Props {
 
 const Home = ({ children }: Props) => {
   return (
-    <Section className="flex flex-col min-h-screen min-w-full">
+    <Section className="flex flex-col min-h-[101dvh] min-w-full">
       <Header />
       <main className="flex-1 px-4 sm:px-16 my-8">{children}</main>
       <Footer />

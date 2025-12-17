@@ -5,7 +5,7 @@ const search = ({ handleSearch, search, setSearch, loading }: any) => {
   return (
     <form
       onSubmit={handleSearch}
-      className="flex justify-center items-center gap-2 w-full sm:w-1/2 mx-auto"
+      className="flex justify-center items-center gap-2 w-full mx-auto"
     >
       <Input
         type="text"
